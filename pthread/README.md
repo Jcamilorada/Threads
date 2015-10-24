@@ -5,7 +5,7 @@ This folder contains the answer to proposed questions and source code with solut
     -  Vector initialization.
     -  Counting the number of 3s in a given vector.
 
-R/ We add the function clock that measures the time (check code).
+    R/ We add the function clock that measures the time (check code).
     - Testing Data Times
         - Execution 1 : 2.849077
         - Execution 2 : 2.767444
@@ -23,3 +23,12 @@ R/ We add the function clock that measures the time (check code).
         - Execution 1 : 0.000987
         - Execution 2 : 0.001925
         - Execution 3 : 0.000459
+
+3. The code was modified to keep count in independents cache lines as the cache coherence is maintained per line. A data structure is included to separate caches lines between private[1] and private[0].
+
+    The solution behaoviur is similar when one thread is used but is worst as thread is increased. The result suggest that more research is necessary to adapt algorithm to computed architecture.
+
+    - Testing Data Times
+        - Execution 1 (1 Theread) : 2.770608
+        - Execution 2 (2 Thread): 3.537544
+        - Execution 3 (3 Thread): 3.984579

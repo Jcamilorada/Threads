@@ -1,2 +1,2 @@
-Juan Camilo Rada Mesa
-Federico Lopez Gomez
+- Juan Camilo Rada Mesa
+- Federico Lopez Gomez
