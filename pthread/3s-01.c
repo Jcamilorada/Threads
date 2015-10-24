@@ -79,6 +79,7 @@ int main(int argc, char* argv[]) {
     printf("[3s-01] Double check %d\n", double_count);
     //printf("[[3s-01] Elapsed time %ld ms\n", (ti2 - t1) / CLOCKS_PER_SEC * 1000);
     printf("[[3s-01] Elapsed time %f\n", (((float)t2 - (float)t1) / 1000000.0F ) * 1000);
+    printf("time couting in %f!\n", (float)(t2 - t1) / CLOCKS_PER_SEC);
 
     return 0;
 }
